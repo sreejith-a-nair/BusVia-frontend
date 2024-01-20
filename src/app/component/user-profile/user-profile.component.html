@@ -1,0 +1,18 @@
+
+<div *ngIf="users" class="profile-container">
+    <div class="center-container">
+      <mat-card class="profile-card">
+        <mat-card-header>
+          <div mat-card-avatar class="profile-avatar"></div>
+          <mat-card-title>Welcome, {{ users.name }}!</mat-card-title>
+          <mat-card-subtitle>{{ users.role.roleName }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p><strong>Name:</strong> {{ users.name }}</p>
+          <p><strong>Email:</strong> {{ users.email }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
+  

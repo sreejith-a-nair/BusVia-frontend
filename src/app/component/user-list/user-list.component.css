@@ -1,0 +1,30 @@
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style table headers */
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style table rows */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect for rows */
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style table cells */
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  

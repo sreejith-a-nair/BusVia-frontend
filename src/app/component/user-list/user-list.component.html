@@ -1,0 +1,55 @@
+<mat-card>
+    <mat-card-content>
+  
+  <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <ng-container >
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+              <button mat-button (click)="onDeleteUser(user.id)" style="background-color:#DE0D32;color: white;">
+                <mat-icon ></mat-icon>Delete
+              </button>
+
+              <button mat-button
+                (click)="editUser(user)" style="background-color:rgb(47, 13, 215);color: white;margin-left: 50px;"> <mat-icon ></mat-icon> 
+                Edit
+              </button>
+            </td>
+          </ng-container>
+        </tr>
+      </tbody>
+    </table>
+    </mat-card-content>
+    <br>
+  </mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- *ngIf="user.role.roleName != 'ROLE_ADMIN'" -->
+       <!-- <td>{{ user.role.roleName }}</td> -->
